@@ -125,10 +125,14 @@
   position: absolute;
   top: -65px;
   right: 0;
-  font-size: 16px; /* Размер шрифта */
   color: #ff4e88; /* Цвет текста */
-  text-align: left; /* Центрируем текст */
-  font-weight: bold; /* Сделать текст жирным */
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20.72px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
 }
 
 .buy p {
@@ -140,6 +144,7 @@
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
   color: #000000;
+  margin-bottom: 10px;
 }
 
 .left_select_item {
