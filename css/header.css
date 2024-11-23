@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+header {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21.94px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.container_header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 0;
+  flex-shrink: 0;
+  width: 400px;
+}
+
+.center img,
+.logo {
+  width: 400px;
+}
+
+.rigth {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-right: 250px;
+}
+
+.cart,
+.favorite {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.cart a img,
+.favorite a img {
+  width: 20px;
+}
+
+.cart_count,
+.favorite_count {
+  background-color: #ff4e88;
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+  min-width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.search img {
+  width: 20px;
+}
+
+.search input {
+  border: none;
+  border-bottom: 2px solid #ccc;
+  outline: none;
+  padding: 5px;
+  font-size: 16px;
+}
+
+.search input:focus {
+  border-bottom-color: #ff4e88;
+}
+
+.left img {
+  width: 16px;
+}
+
+.container_rigth {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../assets/background.png");
+  background-size: 250px;
+}
+
+.list_navigation {
+  background-color: #fde4f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style-type: none;
+  gap: 25px;
+}
+
+.list_navigation li {
+  margin-left: 12px;
+  margin-right: 12px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 400;
+  position: relative;
+  padding: 15px 25px;
+}
+
+.list_navigation li a {
+  text-decoration: none;
+  color: #000000;
+  padding: 15px 35px;
+}
+
+.list_navigation li a:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  transition: background-color 0.5s ease-out;
+}

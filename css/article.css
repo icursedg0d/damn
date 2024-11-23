@@ -1,0 +1,42 @@
+.about_page {
+  display: flex;
+  width: 100%;
+  margin-top: 47px;
+}
+
+.block {
+  padding: 50px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+
+.block1 {
+  padding-right: 10px;
+  justify-content: flex-end;
+  font-family: Gotham Pro bold;
+  font-size: 45px;
+  font-weight: 900;
+  line-height: 56.43px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.block2 {
+  padding-left: 5px;
+  justify-content: flex-start;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24.38px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.block3,
+.block2 {
+  background-image: url("../assets/background.png");
+}

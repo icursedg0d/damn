@@ -1,0 +1,28 @@
+.text_about_delivery {
+  font-family: Gotham Pro;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 39.04px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  width: 80vw;
+}
+
+.container_delivery {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.text_about_delivery ul {
+  margin-top: 10px; /* Отступ сверху */
+  margin-bottom: 10px; /* Отступ снизу */
+  padding-left: 40px; /* Отступ слева для списка */
+}
+
+.text_about_delivery ul li {
+  margin-bottom: 8px; /* Отступ между пунктами */
+  line-height: 1.6; /* Увеличенный межстрочный интервал */
+}

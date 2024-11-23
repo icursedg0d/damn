@@ -1,0 +1,190 @@
+.container_item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  margin-top: 75px;
+  position: relative;
+}
+
+.section_item {
+  width: 80vw;
+  height: 700px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.section_rigth {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.section_left {
+  flex: 1;
+}
+
+.image-gallery {
+  text-align: center;
+}
+.main-image img {
+  width: 500px;
+  height: 500px;
+  object-fit: cover;
+  border: 1px solid #dadada;
+}
+.thumbnails img {
+  width: 100px;
+  height: 100px;
+  margin: 5px;
+  cursor: pointer;
+  border: 1px solid #dadada;
+  object-fit: cover;
+}
+.thumbnails img:hover {
+  border-color: #ff4e88;
+}
+
+.section_left {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 50px;
+  padding: 20px;
+}
+
+.left_text_articul {
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21.94px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #8e8e8e;
+}
+
+.left_logo_item {
+  font-family: Montserrat;
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 50.02px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #000000;
+}
+
+.left_about_item {
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 38.5px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #181818;
+  width: 500px;
+}
+
+.left_price_item {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price {
+  font-family: Montserrat;
+  font-size: 55px;
+  font-weight: 700;
+  line-height: 78.6px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #000000;
+}
+
+.buy {
+  margin-right: 150px;
+  background-image: url("../assets/button_buy.png");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 224px;
+  height: 68px;
+  cursor: pointer;
+  position: relative;
+}
+
+.buy::before {
+  content: "* Выберите, пожалуйста, вес товара";
+  position: absolute;
+  top: -65px;
+  right: 0;
+  font-size: 16px; /* Размер шрифта */
+  color: #ff4e88; /* Цвет текста */
+  text-align: left; /* Центрируем текст */
+  font-weight: bold; /* Сделать текст жирным */
+}
+
+.buy p {
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21.94px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #000000;
+}
+
+.left_select_item {
+  display: flex;
+  justify-content: start;
+  gap: 50px;
+  align-items: center;
+  width: 100%;
+}
+
+.checkbox {
+  cursor: pointer;
+  width: 116px;
+  height: 49px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../assets/button_checkbox.png");
+  background-size: cover;
+  position: relative;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.5px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.active::before {
+  content: "";
+  position: absolute;
+  /* background-image: url("../assets/button_checkbox.png");
+  background-size: cover; */
+  width: 100%;
+  height: 49px;
+  background-color: #f2f2f2;
+  top: 10px;
+  left: 10px;
+  z-index: -10;
+  transform: scaleX(-1) scaleY(-1); /* Переворачиваем элемент по вертикали */
+}
+
+.item_decoration {
+  position: absolute;
+  bottom: 10px;
+  left: 20px;
+}
