@@ -1,46 +1,92 @@
 // Массив данных продуктов (или JSON)
-const products = [
-  {
-    name: "Жвачка",
-    image: "../../assets/catalog/bubbelgum.png",
-    link: "../../html/catalog/first_candy.html",
-  },
-  {
-    name: "Мармелад",
-    image: "../../assets/catalog/marmelad.png",
-    link: "../../html/catalog/second_candy.html",
-  },
-  {
-    name: "Моти",
-    image: "../../assets/catalog/pirog.png",
-    link: "../../html/catalog/third_candy.html",
-  },
-  {
-    name: "Зефир",
-    image: "../../assets/catalog/zephir.png",
-    link: "../../html/catalog/fourth_candy.html",
-  },
-  {
-    name: "Маршмеллоу",
-    image: "../../assets/catalog/heart_zephire.png",
-    link: "../../html/catalog/five_candy.html",
-  },
-  {
-    name: "Печенье",
-    image: "../../assets/catalog/pechenie.png",
-    link: "../../html/catalog/six_candy.html",
-  },
-  {
-    name: "Леденцы",
-    image: "../../assets/catalog/sosat.png",
-    link: "../../html/catalog/seven_candy.html",
-  },
-  {
-    name: "Шоколад",
-    image: "../../assets/catalog/chocolate.png",
-    link: "../../html/catalog/eigth_candy.html",
-  },
-];
+const debug = 0;
+if (debug == 0) {
+  const products = [
+    {
+      name: "Жвачка",
+      image: "../../damn/assets/catalog/bubbelgum.png",
+      link: "../../damn/html/catalog/first_candy.html",
+    },
+    {
+      name: "Мармелад",
+      image: "../../damn/assets/catalog/marmelad.png",
+      link: "../../damn/html/catalog/second_candy.html",
+    },
+    {
+      name: "Моти",
+      image: "../../damn/assets/catalog/pirog.png",
+      link: "../../damn/html/catalog/third_candy.html",
+    },
+    {
+      name: "Зефир",
+      image: "../../damn/assets/catalog/zephir.png",
+      link: "../../damn/html/catalog/fourth_candy.html",
+    },
+    {
+      name: "Маршмеллоу",
+      image: "../../damn/assets/catalog/heart_zephire.png",
+      link: "../../damn/html/catalog/five_candy.html",
+    },
+    {
+      name: "Печенье",
+      image: "../../damn/assets/catalog/pechenie.png",
+      link: "../../damn/html/catalog/six_candy.html",
+    },
+    {
+      name: "Леденцы",
+      image: "../../damn/assets/catalog/sosat.png",
+      link: "../../damn/html/catalog/seven_candy.html",
+    },
+    {
+      name: "Шоколад",
+      image: "../../damn/assets/catalog/chocolate.png",
+      link: "../../damn/html/catalog/eigth_candy.html",
+    },
+  ];
+} else {
+  const products = [
+    {
+      name: "Жвачка",
+      image: "../../assets/catalog/bubbelgum.png",
+      link: "../../html/catalog/first_candy.html",
+    },
+    {
+      name: "Мармелад",
+      image: "../../assets/catalog/marmelad.png",
+      link: "../../html/catalog/second_candy.html",
+    },
+    {
+      name: "Моти",
+      image: "../../assets/catalog/pirog.png",
+      link: "../../html/catalog/third_candy.html",
+    },
+    {
+      name: "Зефир",
+      image: "../../assets/catalog/zephir.png",
+      link: "../../html/catalog/fourth_candy.html",
+    },
+    {
+      name: "Маршмеллоу",
+      image: "../../assets/catalog/heart_zephire.png",
+      link: "../../html/catalog/five_candy.html",
+    },
+    {
+      name: "Печенье",
+      image: "../../assets/catalog/pechenie.png",
+      link: "../../html/catalog/six_candy.html",
+    },
+    {
+      name: "Леденцы",
+      image: "../../assets/catalog/sosat.png",
+      link: "../../html/catalog/seven_candy.html",
+    },
+    {
+      name: "Шоколад",
+      image: "../../assets/catalog/chocolate.png",
+      link: "../../html/catalog/eigth_candy.html",
+    },
+  ];
+}
 
 // Получаем элемент поиска
 const searchInput = document.getElementById("searchInput");
