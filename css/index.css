@@ -423,3 +423,25 @@ h1::after {
 .reverse_image {
   transform: scaleY(-1);
 }
+
+@media screen and (max-width: 1500px) {
+  .logo_section_rigth {
+    width: 100vw;
+    position: relative;
+    height: 300px;
+  }
+
+  .section_logo_text h1 {
+    font-size: 16vw;
+  }
+
+  .section_button {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+
+  .logo_section_left {
+    display: none;
+  }
+}

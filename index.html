@@ -47,36 +47,46 @@
   </head>
   <body>
     <header>
-      <div class="container_header">
-        <div class="rigth">
-          <div class="container_rigth">
-            <div class="cart">
-              <a href="#" class="cart_icon">
-                <img src="./assets/shopping-cart.png" alt="cart" />
-              </a>
-              <span class="cart_count">0</span>
+      <div class="laptop_header">
+        <div class="container_header">
+          <div class="rigth">
+            <div class="container_rigth">
+              <div class="cart">
+                <a href="#" class="cart_icon">
+                  <img src="./assets/shopping-cart.png" alt="cart" />
+                </a>
+                <span class="cart_count">0</span>
+              </div>
+            </div>
+            <div class="search">
+              <img src="./assets/search.png" alt="search" />
+              <input type="text" placeholder="Поиск" />
             </div>
           </div>
-          <div class="search">
-            <img src="./assets/search.png" alt="search" />
-            <input type="text" placeholder="Поиск" />
+          <div class="center">
+            <a href="./index.html"
+              ><img src="./assets/logo.png" alt="logo"
+            /></a>
+          </div>
+          <div class="left">
+            <img src="./assets/phone.png" alt="" />
+            <p
+              style="cursor: pointer"
+              class="copy-text"
+              data-copy="+7 952 812 13 37"
+            >
+              +7 952 812 13 37
+            </p>
           </div>
         </div>
-        <div class="center">
-          <a href="./index.html"><img src="./assets/logo.png" alt="logo" /></a>
-        </div>
-        <div class="left">
-          <img src="./assets/phone.png" alt="" />
-          <p>+7 952 812 13 37</p>
-        </div>
+        <nav class="navigation">
+          <ul class="list_navigation">
+            <li><a href="#catalog">Каталог</a></li>
+            <li><a href="./html/contact.html">Контакты</a></li>
+            <li><a href="./html/delivery.html">Доставка</a></li>
+          </ul>
+        </nav>
       </div>
-      <nav class="navigation">
-        <ul class="list_navigation">
-          <li><a href="#catalog">Каталог</a></li>
-          <li><a href="./html/contact.html">Контакты</a></li>
-          <li><a href="./html/delivery.html">Доставка</a></li>
-        </ul>
-      </nav>
     </header>
 
     <main>
@@ -455,5 +465,20 @@
         </ul>
       </article>
     </div>
+
+    <div class="cart_modal_page" id="cart-modal" style="display: none">
+      <div class="cart_modal_content">
+        <span class="close" style="opacity: 0" id="close-modal">&times;</span>
+        <h2>Корзина</h2>
+        <div class="cart_items"></div>
+        <div class="cart_total">
+          <p>Итого: <span id="cart-total">0 ₽</span></p>
+        </div>
+        <button class="checkout_button">Оформить заказ</button>
+      </div>
+    </div>
+
+    <script src="./js/buy.js"></script>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
