@@ -355,3 +355,46 @@ header {
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
 }
+
+.search {
+  position: relative; /* Относительное позиционирование для контейнера поиска */
+}
+
+.search-results {
+  display: none;
+  position: absolute; /* Абсолютное позиционирование для результатов */
+  top: 100%; /* Располагаем результаты прямо под полем поиска */
+  left: 0;
+  width: 100%;
+  margin-top: 10px;
+  background-color: white;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 100; /* Обеспечивает, что блок будет поверх других элементов */
+}
+
+.search-results .card_search {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+.image_card_search img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+
+.search-results .text_card_search {
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21.94px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
