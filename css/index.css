@@ -13,24 +13,23 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
-  gap: 31px;
   font-size: 0;
+  width: 50vw;
 }
 
 .left_section_1,
 .left_section_2 {
-  width: 10vw;
+  width: 12vw;
   height: 70vh;
 }
 
 .left_section_31,
 .left_section_32 {
-  width: 5vw;
+  width: 7vw;
   height: 70vh;
 }
 
 .left_section_32 {
-  margin-right: 37px;
 }
 
 .logo_section_rigth {
@@ -42,6 +41,7 @@
   background-size: cover;
   width: 50vw;
   height: 70vh;
+  margin-right: 7px;
 }
 
 .section_button a {
