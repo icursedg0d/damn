@@ -35,7 +35,8 @@ document.addEventListener("DOMContentLoaded", () => {
     let total = 0; // Переменная для итоговой суммы
 
     if (cartItemsArray.length === 0) {
-      cartItemsContainer.innerHTML = "<p class='erase_cart'>Ваша корзина пуста</p>";
+      cartItemsContainer.innerHTML =
+        "<p class='erase_cart'>Ваша корзина пуста</p>";
       document.getElementById("cart-total").innerText = "0 ₽";
       return;
     }
@@ -48,16 +49,18 @@ document.addEventListener("DOMContentLoaded", () => {
       cartItem.innerHTML = `
         <img src="${item.image}" alt="${item.name}" class="cart_item_image">
         <div class="cart_item_details">
-          <h3>${item.name}</h3>
-          <p>${item.weight}</p>
-        </div>
-        <div class="cart_item_quantity">
-          <button class="quantity_decrease" data-key="${key}">-</button>
-          <span class="quantity_count">${item.quantity}</span>
-          <button class="quantity_increase" data-key="${key}">+</button>
+          <h3 class='item_details_name'>${item.name}</h3>
+          <p class='item_details_weigth'>${item.weight}</p>
+          <div class="cart_item_quantity">
+            <button class="quantity_decrease" data-key="${key}">-</button>
+            <span class="quantity_count">${item.quantity}</span>
+            <button class="quantity_increase" data-key="${key}">+</button>
+          </div>
         </div>
         <div class="cart_item_price">
-          <p>${(item.price * item.quantity).toFixed(2)} ₽</p>
+          <p class='item_price_p'>${(item.price * item.quantity).toFixed(
+            2
+          )} ₽</p>
         </div>
       `;
       cartItemsContainer.appendChild(cartItem);
@@ -70,15 +73,21 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   // Обработчики для кнопок изменения количества
+  // Обработчики для кнопок изменения количества
   function attachQuantityHandlers() {
     document.querySelectorAll(".quantity_decrease").forEach((btn) => {
       btn.addEventListener("click", () => {
         const key = btn.getAttribute("data-key");
         const cart = JSON.parse(localStorage.getItem("cart")) || {};
-        if (cart[key] && cart[key].quantity > 1) {
+        if (cart[key]) {
+          // Уменьшаем количество или удаляем товар, если оно станет 0
           cart[key].quantity -= 1;
+          if (cart[key].quantity <= 0) {
+            delete cart[key];
+          }
           localStorage.setItem("cart", JSON.stringify(cart));
           updateCartDisplay(); // Обновляем корзину
+          updateCartCount(); // Обновляем счетчик товаров
         }
       });
     });

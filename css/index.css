@@ -29,9 +29,6 @@
   height: 70vh;
 }
 
-.left_section_32 {
-}
-
 .logo_section_rigth {
   display: flex;
   flex-direction: column;
@@ -203,7 +200,7 @@ h1::after {
     "A B C"
     "D F C"
     "G H S";
-  grid-gap: 53px; /* Расстояние между карточками */
+  grid-gap: 5vw;
   margin: auto;
   padding-top: 100px;
 }
