@@ -1,98 +1,91 @@
-// Массив данных продуктов (или JSON)
-let products; // Объявляем переменную, чтобы она была доступна везде
-
-const debug = 0; // Включите или отключите режим отладки (0 - для релиза, 1 - для отладки)
-
-if (debug == 0) {
-  // Если debug = 0, используем абсолютные пути
-  products = [
-    {
-      name: "Жвачка",
-      image: "https://icursedg0d.github.io/damn/assets/catalog/bubbelgum.png",
-      link: "https://icursedg0d.github.io/damn/html/catalog/first_candy.html",
-    },
-    {
-      name: "Мармелад",
-      image: "https://icursedg0d.github.io/damn/assets/catalog/marmelad.png",
-      link: "https://icursedg0d.github.io/damn/html/catalog/second_candy.html",
-    },
-    {
-      name: "Моти",
-      image: "https://icursedg0d.github.io/damn/assets/catalog/pirog.png",
-      link: "https://icursedg0d.github.io/damn/html/catalog/third_candy.html",
-    },
-    {
-      name: "Зефир",
-      image: "https://icursedg0d.github.io/damn/assets/catalog/zephir.png",
-      link: "https://icursedg0d.github.io/damn/html/catalog/fourth_candy.html",
-    },
-    {
-      name: "Маршмеллоу",
-      image:
-        "https://icursedg0d.github.io/damn/assets/catalog/heart_zephire.png",
-      link: "https://icursedg0d.github.io/damn/html/catalog/five_candy.html",
-    },
-    {
-      name: "Печенье",
-      image: "https://icursedg0d.github.io/damn/assets/catalog/pechenie.png",
-      link: "https://icursedg0d.github.io/damn/html/catalog/six_candy.html",
-    },
-    {
-      name: "Леденцы",
-      image: "https://icursedg0d.github.io/damn/assets/catalog/sosat.png",
-      link: "https://icursedg0d.github.io/damn/html/catalog/seven_candy.html",
-    },
-    {
-      name: "Шоколад",
-      image: "https://icursedg0d.github.io/damn/assets/catalog/chocolate.png",
-      link: "https://icursedg0d.github.io/damn/html/catalog/eigth_candy.html",
-    },
-  ];
-} else {
-  // Если debug = 1, используем относительные пути
-  products = [
-    {
-      name: "Жвачка",
-      image: "../../assets/catalog/bubbelgum.png",
-      link: "../../html/catalog/first_candy.html",
-    },
-    {
-      name: "Мармелад",
-      image: "../../assets/catalog/marmelad.png",
-      link: "../../html/catalog/second_candy.html",
-    },
-    {
-      name: "Моти",
-      image: "../../assets/catalog/pirog.png",
-      link: "../../html/catalog/third_candy.html",
-    },
-    {
-      name: "Зефир",
-      image: "../../assets/catalog/zephir.png",
-      link: "../../html/catalog/fourth_candy.html",
-    },
-    {
-      name: "Маршмеллоу",
-      image: "../../assets/catalog/heart_zephire.png",
-      link: "../../html/catalog/five_candy.html",
-    },
-    {
-      name: "Печенье",
-      image: "../../assets/catalog/pechenie.png",
-      link: "../../html/catalog/six_candy.html",
-    },
-    {
-      name: "Леденцы",
-      image: "../../assets/catalog/sosat.png",
-      link: "../../html/catalog/seven_candy.html",
-    },
-    {
-      name: "Шоколад",
-      image: "../../assets/catalog/chocolate.png",
-      link: "../../html/catalog/eigth_candy.html",
-    },
-  ];
-}
+// 
+products = [
+  {
+    name: "Жвачка",
+    image: "https://icursedg0d.github.io/damn/assets/catalog/bubbelgum.png",
+    link: "https://icursedg0d.github.io/damn/html/catalog/first_candy.html",
+  },
+  {
+    name: "Мармелад",
+    image: "https://icursedg0d.github.io/damn/assets/catalog/marmelad.png",
+    link: "https://icursedg0d.github.io/damn/html/catalog/second_candy.html",
+  },
+  {
+    name: "Моти",
+    image: "https://icursedg0d.github.io/damn/assets/catalog/pirog.png",
+    link: "https://icursedg0d.github.io/damn/html/catalog/third_candy.html",
+  },
+  {
+    name: "Зефир",
+    image: "https://icursedg0d.github.io/damn/assets/catalog/zephir.png",
+    link: "https://icursedg0d.github.io/damn/html/catalog/fourth_candy.html",
+  },
+  {
+    name: "Маршмеллоу",
+    image: "https://icursedg0d.github.io/damn/assets/catalog/heart_zephire.png",
+    link: "https://icursedg0d.github.io/damn/html/catalog/five_candy.html",
+  },
+  {
+    name: "Печенье",
+    image: "https://icursedg0d.github.io/damn/assets/catalog/pechenie.png",
+    link: "https://icursedg0d.github.io/damn/html/catalog/six_candy.html",
+  },
+  {
+    name: "Леденцы",
+    image: "https://icursedg0d.github.io/damn/assets/catalog/sosat.png",
+    link: "https://icursedg0d.github.io/damn/html/catalog/seven_candy.html",
+  },
+  {
+    name: "Шоколад",
+    image: "https://icursedg0d.github.io/damn/assets/catalog/chocolate.png",
+    link: "https://icursedg0d.github.io/damn/html/catalog/eigth_candy.html",
+  },
+];
+// } else {
+//   // Если debug = 1, используем относительные пути
+//   products = [
+//     {
+//       name: "Жвачка",
+//       image: "../../assets/catalog/bubbelgum.png",
+//       link: "../../html/catalog/first_candy.html",
+//     },
+//     {
+//       name: "Мармелад",
+//       image: "../../assets/catalog/marmelad.png",
+//       link: "../../html/catalog/second_candy.html",
+//     },
+//     {
+//       name: "Моти",
+//       image: "../../assets/catalog/pirog.png",
+//       link: "../../html/catalog/third_candy.html",
+//     },
+//     {
+//       name: "Зефир",
+//       image: "../../assets/catalog/zephir.png",
+//       link: "../../html/catalog/fourth_candy.html",
+//     },
+//     {
+//       name: "Маршмеллоу",
+//       image: "../../assets/catalog/heart_zephire.png",
+//       link: "../../html/catalog/five_candy.html",
+//     },
+//     {
+//       name: "Печенье",
+//       image: "../../assets/catalog/pechenie.png",
+//       link: "../../html/catalog/six_candy.html",
+//     },
+//     {
+//       name: "Леденцы",
+//       image: "../../assets/catalog/sosat.png",
+//       link: "../../html/catalog/seven_candy.html",
+//     },
+//     {
+//       name: "Шоколад",
+//       image: "../../assets/catalog/chocolate.png",
+//       link: "../../html/catalog/eigth_candy.html",
+//     },
+//   ];
+// }
 
 // Получаем элемент поиска
 const searchInput = document.getElementById("searchInput");
