@@ -1,7 +1,11 @@
 // Массив данных продуктов (или JSON)
-const debug = 0;
+let products; // Объявляем переменную, чтобы она была доступна везде
+
+const debug = 0; // Включите или отключите режим отладки (0 - для релиза, 1 - для отладки)
+
 if (debug == 0) {
-  const products = [
+  // Если debug = 0, используем абсолютные пути
+  products = [
     {
       name: "Жвачка",
       image: "https://icursedg0d.github.io/damn/assets/catalog/bubbelgum.png",
@@ -9,7 +13,7 @@ if (debug == 0) {
     },
     {
       name: "Мармелад",
-      image: "../../damn/assets/catalog/marmelad.png",
+      image: "https://icursedg0d.github.io/damn/assets/catalog/marmelad.png",
       link: "https://icursedg0d.github.io/damn/html/catalog/second_candy.html",
     },
     {
@@ -45,7 +49,8 @@ if (debug == 0) {
     },
   ];
 } else {
-  const products = [
+  // Если debug = 1, используем относительные пути
+  products = [
     {
       name: "Жвачка",
       image: "../../assets/catalog/bubbelgum.png",
