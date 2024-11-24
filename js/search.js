@@ -4,43 +4,44 @@ if (debug == 0) {
   const products = [
     {
       name: "Жвачка",
-      image: "../../damn/assets/catalog/bubbelgum.png",
-      link: "../../damn/html/catalog/first_candy.html",
+      image: "https://icursedg0d.github.io/damn/assets/catalog/bubbelgum.png",
+      link: "https://icursedg0d.github.io/damn/html/catalog/first_candy.html",
     },
     {
       name: "Мармелад",
       image: "../../damn/assets/catalog/marmelad.png",
-      link: "../../damn/html/catalog/second_candy.html",
+      link: "https://icursedg0d.github.io/damn/html/catalog/second_candy.html",
     },
     {
       name: "Моти",
-      image: "../../damn/assets/catalog/pirog.png",
-      link: "../../damn/html/catalog/third_candy.html",
+      image: "https://icursedg0d.github.io/damn/assets/catalog/pirog.png",
+      link: "https://icursedg0d.github.io/damn/html/catalog/third_candy.html",
     },
     {
       name: "Зефир",
-      image: "../../damn/assets/catalog/zephir.png",
-      link: "../../damn/html/catalog/fourth_candy.html",
+      image: "https://icursedg0d.github.io/damn/assets/catalog/zephir.png",
+      link: "https://icursedg0d.github.io/damn/html/catalog/fourth_candy.html",
     },
     {
       name: "Маршмеллоу",
-      image: "../../damn/assets/catalog/heart_zephire.png",
-      link: "../../damn/html/catalog/five_candy.html",
+      image:
+        "https://icursedg0d.github.io/damn/assets/catalog/heart_zephire.png",
+      link: "https://icursedg0d.github.io/damn/html/catalog/five_candy.html",
     },
     {
       name: "Печенье",
-      image: "../../damn/assets/catalog/pechenie.png",
-      link: "../../damn/html/catalog/six_candy.html",
+      image: "https://icursedg0d.github.io/damn/assets/catalog/pechenie.png",
+      link: "https://icursedg0d.github.io/damn/html/catalog/six_candy.html",
     },
     {
       name: "Леденцы",
-      image: "../../damn/assets/catalog/sosat.png",
-      link: "../../damn/html/catalog/seven_candy.html",
+      image: "https://icursedg0d.github.io/damn/assets/catalog/sosat.png",
+      link: "https://icursedg0d.github.io/damn/html/catalog/seven_candy.html",
     },
     {
       name: "Шоколад",
-      image: "../../damn/assets/catalog/chocolate.png",
-      link: "../../damn/html/catalog/eigth_candy.html",
+      image: "https://icursedg0d.github.io/damn/assets/catalog/chocolate.png",
+      link: "https://icursedg0d.github.io/damn/html/catalog/eigth_candy.html",
     },
   ];
 } else {
