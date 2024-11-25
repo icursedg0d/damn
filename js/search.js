@@ -1,4 +1,4 @@
-// 
+//
 products = [
   {
     name: "Жвачка",
@@ -41,8 +41,6 @@ products = [
     link: "https://icursedg0d.github.io/damn/html/catalog/eigth_candy.html",
   },
 ];
-// } else {
-//   // Если debug = 1, используем относительные пути
 //   products = [
 //     {
 //       name: "Жвачка",
@@ -85,7 +83,6 @@ products = [
 //       link: "../../html/catalog/eigth_candy.html",
 //     },
 //   ];
-// }
 
 // Получаем элемент поиска
 const searchInput = document.getElementById("searchInput");

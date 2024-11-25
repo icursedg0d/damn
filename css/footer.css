@@ -191,3 +191,83 @@ footer {
 .information ul li a:hover {
   color: #ff4e88;
 }
+
+@media screen and (max-width: 1500px) {
+  footer {
+    padding-top: 50px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+    padding-bottom: 50px;
+    padding-left: 50px;
+    background-color: #FF4E88;
+    color: white;
+  }
+
+  .information ul li a {
+    color: black;
+    text-align: left;
+  }
+
+  .text_footer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    text-align: left;
+  }
+
+  .footer_left {
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .footer_rigth {
+    align-items: flex-start;
+    gap: 40px;
+  }
+
+  .logo_name::before {
+    left: 0;
+    transform: translateY(-10px);
+    background-color: white;
+  }
+
+  .logo_name h2 {
+    color: white;
+    text-align: left;
+    margin-bottom: 40px;
+  }
+
+  .text_footer p {
+    text-align: left;
+    color: white;
+    margin: 0;
+  }
+
+  .navigation_footer h4,
+  .contacts h4 {
+    text-align: left;
+    color: white;
+    margin-bottom: 40px;
+  }
+
+  .list_nav_footer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+  }
+
+  .list_nav_footer li a {
+    text-align: left;
+    color: white;
+  }
+
+  .contacts .list_nav_footer li a {
+    color: black;
+  }
+
+  .container {
+    display: none;
+  }
+}

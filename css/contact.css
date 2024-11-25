@@ -122,3 +122,92 @@
   background-color: #000; /* Цвет линии */
   margin: 0 15px; /* Отступы слева и справа */
 }
+
+@media screen and (max-width: 1500px) {
+  .container_contacts {
+    margin-top: 20px;
+  }
+
+  .text_about_contacts {
+    font-size: 16px;
+    line-height: 28px;
+    width: 90vw;
+    padding: 0 15px;
+  }
+
+  .text_about_contacts ul {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-left: 20px;
+  }
+
+  .text_about_contacts p a {
+    padding-left: 20px;
+  }
+
+  .container_contacts_map {
+    margin-top: 50px;
+  }
+
+  .map_container {
+    width: 90vw;
+  }
+
+  .map_section {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .text_map_logo {
+    font-size: 28px;
+    line-height: 36px;
+    margin-bottom: 30px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .text_map_logo h3::before {
+    display: none;
+  }
+
+  .text_map_logo h3::after {
+    display: none;
+  }
+
+  .info_map {
+    gap: 30px;
+    width: 100%;
+  }
+
+  .info {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+  }
+
+  .info p {
+    font-size: 14px;
+    line-height: 20px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .info span {
+    width: 30px;
+    height: 2px;
+    margin: 10px 0;
+  }
+
+  .info img {
+    width: 30px;
+  }
+
+  .map iframe {
+    width: 100% !important;
+    height: 300px !important;
+  }
+
+  .map {
+    width: 100%;
+  }
+}
