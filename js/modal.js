@@ -1,15 +1,18 @@
 document.addEventListener("DOMContentLoaded", () => {
   const cartModal = document.getElementById("cart-modal");
-  const cartIcon = document.querySelector(".cart_icon");
+  const cartIcons = document.querySelectorAll(".cart_icon");
   const closeModal = document.getElementById("close-modal");
   const cartItemsContainer = document.querySelector(".cart_items");
 
   // Открыть модальное окно
-  cartIcon.addEventListener("click", (e) => {
-    e.preventDefault();
-    updateCartDisplay(); // Обновить содержимое корзины
-    cartModal.style.display = "flex";
-    document.body.style.overflow = "hidden";
+  cartIcons.forEach((cartIcon) => {
+    cartIcon.addEventListener("click", (e) => {
+      e.preventDefault();
+      const cartModal = document.getElementById("cart-modal"); // Ваше общее модальное окно
+      updateCartDisplay(); // Обновить содержимое корзины
+      cartModal.style.display = "flex";
+      document.body.style.overflow = "hidden";
+    });
   });
 
   // Закрыть модальное окно

@@ -61,7 +61,9 @@ function updateCartCount() {
   }
 
   // Обновляем отображение количества товаров в корзине
-  document.querySelector(".cart_count").innerText = totalCount;
+  document.querySelectorAll(".cart_count").forEach((cartCountElement) => {
+    cartCountElement.innerText = totalCount;
+  });
 }
 
 // Функция для показа уведомления
